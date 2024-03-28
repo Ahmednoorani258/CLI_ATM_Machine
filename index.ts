@@ -81,8 +81,9 @@ let pininput = await inquirer.prompt(
         
             }else{
 
+                balance.amount -= amount.amount
                 console.log(chalk.yellowBright(`Successfully Transfered ${chalk.cyan(amount.amount)} To Account Number:${chalk.cyan(accNum.accountNumber)}`));
-                
+                console.log(chalk.yellowBright(`Now your current balance is: ${chalk.cyan(balance.amount)}`));
             }
 
 
