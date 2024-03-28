@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 import inquirer from "inquirer";
 import chalk from "chalk";
 import chalkAnimation from "chalk-animation";
@@ -16,7 +17,7 @@ async function radar(arr, time) {
     text.stop();
 }
 await rainbow(`Welcome to Noorani's CLI_ATM`, 2000);
-await radar(`\n\n||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||`, 5000);
+await radar(`\n\n||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||`, 4000);
 let pin = 1234;
 let balance = await inquirer.prompt([{
         name: "amount",
@@ -35,6 +36,7 @@ if (pininput.pin !== pin) {
 }
 else {
     while (true) {
+        await radar(`\n\n||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||`, 4000);
         let chooseopt = await inquirer.prompt({
             name: "Operation",
             type: "list",

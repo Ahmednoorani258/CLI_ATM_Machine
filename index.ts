@@ -48,7 +48,7 @@ let pininput = await inquirer.prompt(
         
         while (true) {
             
-        
+            await radar(`\n\n||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||`,4000)
 
         let chooseopt = await inquirer.prompt(
                 {
