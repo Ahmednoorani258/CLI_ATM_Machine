@@ -28,6 +28,10 @@ let balance = await inquirer.prompt([{
     type: 'number',
     message: chalk.green("\nEnter the balance of demo account")
 }]) ;
+if(balance.amount){
+
+
+
 
 let info =`\nDEMO ACCOUNT BALANCE : ${chalk.cyan(balance.amount)} PKR`;
 console.log(chalk.yellowBright(info));
@@ -192,4 +196,7 @@ let pininput = await inquirer.prompt(
     } 
     }
 
-  
+}else{
+    console.log(chalk.red(`U need to set Amount of Demo account\n other wise u didn't able to use it`));
+    
+}
