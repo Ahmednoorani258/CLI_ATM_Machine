@@ -132,7 +132,7 @@ let pininput = await inquirer.prompt(
                 console.log(chalk.magenta(`Your Current Balance is ${chalk.yellow(balance.amount)}`));
                 }
 
-            }else if(fastCash.amounts === 5000){
+            }else if(fastCash.amounts === 10000){
                 if(fastCash.amounts > balance.amount){
 
                     console.log(chalk.red(`Insufficinet balance,Try again! \n Your current balance is ${chalk.yellow(balance.amount)}`));
@@ -140,11 +140,11 @@ let pininput = await inquirer.prompt(
 
                 }else{
 
-                balance.amount -= 5000
+                balance.amount -= 10000
                 console.log(chalk.magenta(`Successfully Withdraw ${chalk.yellow(fastCash.amounts)}`));
                 console.log(chalk.magenta(`Your Current Balance is ${chalk.yellow(balance.amount)}`));
                 }
-            }else if(fastCash.amounts === 10000){
+            }else if(fastCash.amounts === 15000){
                 if(fastCash.amounts > balance.amount){
 
                     console.log(chalk.red(`Insufficinet balance,Try again! \n Your current balance is ${chalk.yellow(balance.amount)}`));
