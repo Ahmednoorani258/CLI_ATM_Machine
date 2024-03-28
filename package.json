@@ -1,9 +1,16 @@
 {
-  "name": "cli_atm_machine",
-  "version": "1.0.0",
+  "name": "noorani_atm",
+  "version": "2.0.0",
   "description": "command line atm machine",
   "main": "index.js",
   "type": "module",
+  "bin": {
+    "noorani_atm": "index.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
